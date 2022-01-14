@@ -15,12 +15,12 @@ const ContactCard = () => {
 					<div className=" float-right">
 						<button
 							className="btn"
-							onClick={() => this.props.history.push("/edit")}>
+						>
 							<i className="fas fa-pencil-alt mr-3"></i>
 						</button>
 						<button
 							className="btn"
-							onClick={() => this.props.onDelete()}>
+                        >
 							<i className="fas fa-trash-alt"></i>
 						</button>
 					</div>

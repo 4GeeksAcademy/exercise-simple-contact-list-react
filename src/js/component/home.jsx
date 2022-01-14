@@ -2,6 +2,8 @@ import React from "react";
 
 import ContactCard from "./ContactCard.jsx";
 import AddContact from "./AddContact.jsx";
+
+
 const Home = () => {
 	return (
 		<div className="container">
