@@ -1,24 +1,29 @@
 import React from "react";
 
-//include images into your bundle
-import rigoImage from "../../img/rigo-baby.jpg";
-
-//create your first component
+import ContactCard from "./ContactCard.jsx";
+import AddContact from "./AddContact.jsx";
 const Home = () => {
 	return (
-		<div>
-			<h1 className="text-center mt-5">Hello Rigo!</h1>
-			<p>
-				<img src={rigoImage} />
-			</p>
-			<a href="#" className="btn btn-success">
-				If you see this green button... bootstrap is working...
-			</a>
-			<p>
-				Made by{" "}
-				<a href="http://www.4geeksacademy.com">4Geeks Academy</a>, with
-				love!
-			</p>
+		<div className="container">
+			<div>
+				<p className="text-right my-3">
+					<AddContact />
+					<button type="button" className="btn btn-success" to="/add">
+						Add new contact
+					</button>
+				</p>
+				<div
+					id="contacts"
+					className="panel-collapse collapse show"
+					aria-expanded="true">
+					<ul className="list-group pull-down" id="contact-list">
+						<ContactCard />
+						<ContactCard />
+						<ContactCard />
+						<ContactCard />
+					</ul>
+				</div>
+			</div>
 		</div>
 	);
 };
